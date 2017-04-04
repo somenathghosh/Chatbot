@@ -7,8 +7,8 @@ const  glob 	= require('glob');
 const process = require('process');
 
 //Test
-// let classifier = require('./app/util/ghobot/engine/ddgn/classifier');
-// console.log(classifier.classify('how are you'));
+let classifier = require('./app/util/ghobot/engine/ddgn/classifier');
+console.log(classifier.classify('I can not find your user id. Do you want to try again or want to retrieve your user id?'));
 
 //Test n
 

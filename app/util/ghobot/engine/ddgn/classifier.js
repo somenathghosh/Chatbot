@@ -5,9 +5,6 @@ const classifier = new natural.BayesClassifier();
 
 classifier.addDocument(['hi','hello','howdy','hey'], 'greet');
 
-classifier.addDocument(['how are you','how do you do','how is the thing at your end'], 'intro');
-
-
 classifier.addDocument('I forgot my password', 'forgot-password');
 classifier.addDocument('I lost my password', 'forgot-password');
 classifier.addDocument('Can you reset my password', 'forgot-password');
