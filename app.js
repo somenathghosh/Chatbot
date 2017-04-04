@@ -7,8 +7,19 @@ const  glob 	= require('glob');
 const process = require('process');
 
 //Test
+const natural = require('natural');
+const stemmer = natural.PorterStemmer;
+stemmer.attach();
+const lda = require('lda');
+const sentiment = require('sentiment');
+
 let classifier = require('./app/util/ghobot/engine/ddgn/classifier');
-console.log(classifier.classify('I can not find your user id. Do you want to try again or want to retrieve your user id?'));
+let text = 'I have already registed my email address, why are you asking again?';
+console.log(classifier.classify(text));
+var documents = text.match( /[^\.!\?]+[\.!\?]+/g );
+console.log(lda(documents, 1, 3));
+//console.log(sentiment(text));
+console.log(text.tokenizeAndStem());
 
 //Test n
 
