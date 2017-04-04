@@ -2,7 +2,7 @@
 
 const events = require('events');
 //const Pattern = require('./pattern');
-const PatternCollection = require('../../../mdb');
+const PatternCollection = require('../../../mdb').Pattern;
 //const Pfile = require('./pfile');
 const winston = require('winston');
 const console = {};

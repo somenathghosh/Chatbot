@@ -8,7 +8,8 @@ const process = require('process');
 
 //Test
 const natural = require('natural');
-const stemmer = natural.PorterStemmer;
+const stemmer = natural.LancasterStemmer;;
+
 stemmer.attach();
 const lda = require('lda');
 const sentiment = require('sentiment');

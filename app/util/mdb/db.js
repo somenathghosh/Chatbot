@@ -3,4 +3,6 @@
 const loki = require('lokijs');
 const db = new loki('loki.json');
 
-module.exports = db.addCollection('patttern');
+module.exports = {  Pattern: db.addCollection('patttern'),
+                    classifier: db.addCollection('classifier')
+                  }

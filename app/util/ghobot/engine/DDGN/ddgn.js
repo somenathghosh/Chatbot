@@ -1,7 +1,7 @@
 'use strict';
 
 const events = require('events');
-// const PatternCollection = require('../../../mdb');
+const ClassifierCollection = require('../../../mdb').Classifier;
 const winston = require('winston');
 const console = {};
 console.log = winston.info;
