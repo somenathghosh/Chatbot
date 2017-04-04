@@ -3,4 +3,3 @@ public/components
 .nyc_output
 .sass-cache
 .env
-.jshintrc
