@@ -15,7 +15,7 @@ const lda = require('lda');
 const sentiment = require('sentiment');
 
 let classifier = require('./app/util/ghobot/engine/ddgn/classifier');
-let text = 'I have already registed my email address, why are you asking again?';
+let text = 'I don\'t remember, but I think, it is Somenath.';
 console.log(classifier.classify(text));
 var documents = text.match( /[^\.!\?]+[\.!\?]+/g );
 console.log(lda(documents, 1, 3));
